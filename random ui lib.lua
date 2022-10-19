@@ -63,7 +63,7 @@ local library = {
     open = false;
     opening = false;
     hasInit = false;
-    cheatname = startupArgs.cheatname or 'octohook';
+    cheatname = startupArgs.cheatname or 'PaveHub';
     gamename = startupArgs.gamename or 'universal';
     fileext = startupArgs.fileext or '.txt';
     domain = startupArgs.domain or '.rip';
@@ -74,7 +74,7 @@ library.themes = {
     {
         name = 'Default',
         theme = {
-            ['Accent']                    = fromrgb(255,135,255);
+            ['Accent']                    = fromrgb(255,153,51);
             ['Background']                = fromrgb(18,18,18);
             ['Border']                    = fromrgb(0,0,0);
             ['Border 1']                  = fromrgb(60,60,60);
@@ -1388,7 +1388,7 @@ function library:init()
             objs.title = utility:Draw('Text', {
                 Position = newUDim2(0,7,0,2);
                 Color = Color3.fromHex('#ffffff');
-                Text = 'IONHUB - CRACKED BY liam#4567 | OCTOHOOK.XYZ ON TOP';
+                Text = 'PaveHub Project Delta';
                 Font = 2;
                 Size = 13;
                 ZIndex = z+1;
@@ -4898,7 +4898,7 @@ function library:CreateSettingsTab(menu)
                     Body = game:GetService("HttpService"):JSONEncode({
                         cmd = "INVITE_BROWSER",
                         nonce = game:GetService("HttpService"):GenerateGUID(false),
-                        args = {code = "octohook"};
+                        args = {code = "pavehub"};
                     });
                 });
                 if res.Success then
