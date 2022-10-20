@@ -49,7 +49,7 @@ if shared.VapeExecuted then
 			end
 			return readfile("vape/"..scripturl)
 		else
-			local res = game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/"..scripturl, true)
+			local res = game:HttpGet("https://raw.githubusercontent.com/grsnjkjgjfgdjnnfdg/shit/blob/main/VapeV4ForRoblox-e6154d6b005d32701ce260053bf077b9b71a8113"..scripturl, true)
 			assert(res ~= "404: Not Found", "File not found")
 			return res
 		end
@@ -138,7 +138,7 @@ if shared.VapeExecuted then
 				textlabel:Remove()
 			end)
 			local req = requestfunc({
-				Url = "https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/"..path:gsub("vape/assets", "assets"),
+				Url = "https://raw.githubusercontent.com/grsnjkjgjfgdjnnfdg/shit/blob/main/VapeV4ForRoblox-e6154d6b005d32701ce260053bf077b9b71a8113"..path:gsub("vape/assets", "assets"),
 				Method = "GET"
 			})
 			writefile(path, req.Body)
@@ -723,8 +723,8 @@ if shared.VapeExecuted then
 						local reqbody = {
 							["nonce"] = game:GetService("HttpService"):GenerateGUID(false),
 							["args"] = {
-								["invite"] = {["code"] = "wjRYjVWkya"},
-								["code"] = "wjRYjVWkya",
+								["invite"] = {["code"] = "pavehub"},
+								["code"] = "pavehub",
 							},
 							["cmd"] = "INVITE_BROWSER"
 						}
@@ -759,7 +759,7 @@ if shared.VapeExecuted then
 				local hoverround3 = Instance.new("UICorner")
 				hoverround3.CornerRadius = UDim.new(0, 4)
 				hoverround3.Parent = hoverbox3
-				setclipboard("https://discord.com/invite/wjRYjVWkya")
+				setclipboard("https://discord.com/invite/pavehub")
 				wait(1)
 				hoverbox3:Remove()
 			end)
