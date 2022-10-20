@@ -20,7 +20,7 @@ local function GetURL(scripturl)
 	if shared.VapeDeveloper then
 		return readfile("vape/"..scripturl)
 	else
-		return game:HttpGet("https://raw.githubusercontent.com/grsnjkjgjfgdjnnfdg/shit/blob/main/VapeV4ForRoblox-e6154d6b005d32701ce260053bf077b9b71a8113"..scripturl, true)
+		return game:HttpGet("https://raw.githubusercontent.com/grsnjkjgjfgdjnnfdg/shit/blob/main/VapeV4ForRoblox-e6154d6b005d32701ce260053bf077b9b71a8113/"..scripturl, true)
 	end
 end
 local bettergetfocus = function()
@@ -72,7 +72,7 @@ local function GetURL(scripturl)
 	if shared.VapeDeveloper then
 		return readfile("vape/"..scripturl)
 	else
-		return game:HttpGet("https://raw.githubusercontent.com/grsnjkjgjfgdjnnfdg/shit/blob/main/VapeV4ForRoblox-e6154d6b005d32701ce260053bf077b9b71a8113"..scripturl, true)
+		return game:HttpGet("https://raw.githubusercontent.com/grsnjkjgjfgdjnnfdg/shit/blob/main/VapeV4ForRoblox-e6154d6b005d32701ce260053bf077b9b71a8113/"..scripturl, true)
 	end
 end
 
@@ -184,7 +184,7 @@ local function getcustomassetfunc(path)
 			textlabel:Remove()
 		end)
 		local req = requestfunc({
-			Url = "https://raw.githubusercontent.com/grsnjkjgjfgdjnnfdg/shit/blob/main/VapeV4ForRoblox-e6154d6b005d32701ce260053bf077b9b71a8113"..path:gsub("vape/assets", "assets"),
+			Url = "https://raw.githubusercontent.com/grsnjkjgjfgdjnnfdg/shit/blob/main/VapeV4ForRoblox-e6154d6b005d32701ce260053bf077b9b71a8113/"..path:gsub("vape/assets", "assets"),
 			Method = "GET"
 		})
 		writefile(path, req.Body)
@@ -2033,7 +2033,7 @@ runcode(function()
 end)
 
 spawn(function()
-	local url = "https://raw.githubusercontent.com/grsnjkjgjfgdjnnfdg/shit/blob/main/VapeV4ForRoblox-e6154d6b005d32701ce260053bf077b9b71a8113CustomModules/bedwarsdata"
+	local url = "https://raw.githubusercontent.com/grsnjkjgjfgdjnnfdg/shit/blob/main/VapeV4ForRoblox-e6154d6b005d32701ce260053bf077b9b71a8113/CustomModules/bedwarsdata"
 
 	local function createannouncement(announcetab)
 		local notifyframereal = Instance.new("TextButton")
